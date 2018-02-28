@@ -1,0 +1,31 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Auth::routes();
+
+Route::get('/', 'PagesController@getNaslovna');
+Route::get('/home', 'PagesController@getHome');
+Route::get('/pravilnik', 'PagesController@getPravilnik');
+Route::get('/rezervacija', 'PagesController@getRezervacija');
+Route::get('/jezero', 'PagesController@getJezero');
+Route::get('/cenovnik', 'PagesController@getCenovnik');
+Route::get('/galerija/jezero', 'PagesController@getFotoJezero');
+Route::get('/galerija/albumi', 'PagesController@getFotoAlbumi'); 
+Route::get('/istorija/{godina}', 'PagesController@getIstorija'); 
+Route::get('/ekologija', 'PagesController@getEkologija'); 
+Route::get('/objava/{id}', 'PagesController@getObjava'); 
+Route::get('/admin/nova-objava', 'ArticleController@getNovaObjava'); 
+Route::post('/admin/nova-objava', 'ArticleController@postNovaObjava'); 
+Route::post('/admin/del-objava', 'ArticleController@postDelObjava'); 
+Route::get('/admin/alt-objava/{id}', 'ArticleController@getAltObjava'); 
+Route::post('/admin/alt-objava', 'ArticleController@postAltObjava'); 
