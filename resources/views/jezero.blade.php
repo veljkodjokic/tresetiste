@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-
+<style type="text/css">
+    body{
+        color: black
+    }
+</style>
 <h3>GDE SE NALAZI TRESETI&Scaron;TE?</h3>
 
 <p>Jezero Treseti&scaron;te se nalazi u Evropi, regionu Balkana, Srbiji, Vojvodini. Geografski položaj i &scaron;truktura putne mreže omogućava brzi dolazak do jezera! U tipičnom geografskom području Subotičko - Horgo&scaron;ke pesčare, na samom severu regiona vojvodine, nedaleko od mesta Palić, nalazi se jezero Treseti&scaron;te. Ne vidja se tako često, perfektan sklop prirodnih fenomena, 100 godi&scaron;nja borova suma sa jedne strane i druge pe&scaron;čano stepski krajolik ižmedju kojeg je sme&scaron;ten, pravi biser</p>
@@ -16,6 +20,6 @@
 
 <p>GPS koordinate jezera su: Latitude:&nbsp; 46&deg; 8&#39;55.00&quot;N, Longitude: 19&deg;45&#39;21.00&quot;E</p>
 
-<p><a href="https://tresetiste.com/mapa-do-jezera.jpg"><img src="https://tresetiste.com/mapa-do-jezera.jpg" style="margin-left:auto; margin-right:auto; width:700px" /></a></p>
+<p><a href="https://tresetiste.com/pics/mapa-do-jezera.jpg"><img src="https://tresetiste.com/pics/mapa-do-jezera.jpg" style="margin-left:auto; margin-right:auto; width:700px" /></a></p>
 
 @endsection
