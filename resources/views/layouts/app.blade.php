@@ -12,7 +12,7 @@
     <meta property=og:description content='Carp fishing lake'>
     <meta property=og:image content='https://tresetiste.com/pics/jezero-tresetiste.jpg'>
 
-
+    <a href="https://seal.beyondsecurity.com/vulnerability-scanner-verification/tresetiste.com"><img src="https://seal.beyondsecurity.com/verification-images/tresetiste.com/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
