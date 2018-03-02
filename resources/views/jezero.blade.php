@@ -20,6 +20,6 @@
 
 <p>GPS koordinate jezera su: Latitude:&nbsp; 46&deg; 8&#39;55.00&quot;N, Longitude: 19&deg;45&#39;21.00&quot;E</p>
 
-<p><a href="https://tresetiste.com/pics/mapa-do-jezera.jpg"><img src="https://tresetiste.com/pics/mapa-do-jezera.jpg" style="margin-left:auto; margin-right:auto; width:700px" /></a></p>
+<p><a href="https://tresetiste.com/pics/mapa-do-jezera.jpg"><div style="max-width: 700px; "><img src="https://tresetiste.com/pics/mapa-do-jezera.jpg" style="margin-left:auto; margin-right:auto; height: auto; width: auto\9; max-width: 100%" /></div></a></p>
 
 @endsection
