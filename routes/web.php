@@ -19,11 +19,12 @@ Route::get('/pravilnik', 'PagesController@getPravilnik');
 Route::get('/rezervacija', 'PagesController@getRezervacija');
 Route::get('/jezero', 'PagesController@getJezero');
 Route::get('/cenovnik', 'PagesController@getCenovnik');
-Route::get('/galerija/jezero', 'PagesController@getFotoJezero');
-Route::get('/galerija/albumi', 'PagesController@getFotoAlbumi'); 
+Route::get('/galerija', 'PagesController@getFoto');
 Route::get('/istorija/{godina}', 'PagesController@getIstorija'); 
 Route::get('/ekologija', 'PagesController@getEkologija'); 
 Route::get('/objava/{id}', 'PagesController@getObjava'); 
+
+//Administrator routes
 Route::get('/admin/nova-objava', 'ArticleController@getNovaObjava'); 
 Route::post('/admin/nova-objava', 'ArticleController@postNovaObjava'); 
 Route::post('/admin/del-objava', 'ArticleController@postDelObjava'); 

@@ -61,28 +61,7 @@
 
                             <li><a href="/cenovnik">Cenovnik</a></li>
 
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    Foto Galerija<span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="/galerija/jezero">
-                                            Jezero
-                                        </a>
-
-                                        <a href="/galerija/albumi">
-                                            Albumi
-                                        </a>
-
-                                        <a href="/galerija/facebook">
-                                            Facebook
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><a href="/galerija">Foto Galerija</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">

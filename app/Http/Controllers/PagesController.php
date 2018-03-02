@@ -34,14 +34,9 @@ class PagesController extends Controller
     	return view('cenovnik');
     }
 
-    public function getFotoJezero()
+    public function getFoto()
     {
-    	return view('galerija.jezero');
-    }
-
-    public function getFotoAlbumi()
-    {
-    	return view('galerija.albumi');
+    	return view('galerija');
     }
 
     public function getIstorija($godina)
