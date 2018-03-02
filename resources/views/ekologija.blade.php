@@ -11,7 +11,7 @@ Nakon izvučene velike količine mulja na obalu jezera koji je u velikoj meri ug
 
 <p>Takođe i priobalje kao i sama obala je dobila svoje stanovnike u narodu takozvani ČUVAR MOSTA ,LOKVANJ, ŽUTI BARSKI LJILJAN itd. Sve ove biljke smo brižno presađivali sa drugih lokacija ne ugrožavajući sam izvorni deo odakle je uzet ,naravno oni su takođe pod posebnim režimom koji se čuva i nesme se ugrožavati.</p>
 
-<p>&nbsp;<a href="https://tresetiste.com/pics/ekologija10lokvanj.jpg"><img src="https://tresetiste.com/pics/ekologija10lokvanj.jpg" style="height:138px" /></a> <a href="https://tresetiste.com/pics/ekologija4.jpg"><img src="https://tresetiste.com/pics/ekologija4.jpg" style="height:138px" /></a><a href="https://tresetiste.com/pics/ekologija8a.jpg"><img src="https://tresetiste.com/pics/ekologija8a.jpg" style="height:138px" /></a></p>
+<p>&nbsp;<a href="https://tresetiste.com/pics/ekologija10lokvanj.jpg"><img src="https://tresetiste.com/pics/ekologija10lokvanj.jpg" style="height:138px" /></a> <a href="https://tresetiste.com/pics/ekologija4.jpg"><img src="https://tresetiste.com/pics/ekologija4.jpg" style="height:138px" /></a><a href="https://tresetiste.com/pics/ekologija8a.jpg"><img src="https://tresetiste.com/pics/ekologija8a.jpg" style="height:138px; padding-left: 5px;" /></a></p>
 
 <p>&nbsp;</p>
 
