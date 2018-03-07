@@ -34,11 +34,6 @@ class PagesController extends Controller
     	return view('cenovnik');
     }
 
-    public function getFoto()
-    {
-    	return view('galerija');
-    }
-
     public function getIstorija($godina)
     {
     	return view('istorija.'.$godina);

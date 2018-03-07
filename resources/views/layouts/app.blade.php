@@ -61,7 +61,7 @@
 
                             <li><a href="/cenovnik">Cenovnik</a></li>
 
-                            <li><a href="/galerija">Foto Galerija</a></li>
+                            <li><a href="/galerija">Galerija</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -142,12 +142,8 @@
                         @yield('content')
                     </div>
                     <div id="sticky">
-                        <iframe id="fbpage" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftresetiste%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_con  tainer_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="200" style="border:none;overflow:hidden; float: right; float: top;" scrolling="no" frameborder="0"   allowTransparency="true"></iframe>
-    
                         <div id="sponsor">
-                            <img src="/pics/boilieroller.png" class="sponsor">
-                            <img src="/pics/restoran.jpg" style="border-radius: 7%" class="sponsor">
-                            <img src="/pics/carpsystem.jpg" class="sponsor">
+                            @include('partials.sponzori')
                         </div>
                     </div>
                     <div id="footer"><hr>&copy;2018 www.tresetiste.com</div>

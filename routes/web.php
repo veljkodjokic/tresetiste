@@ -19,14 +19,24 @@ Route::get('/pravilnik', 'PagesController@getPravilnik');
 Route::get('/rezervacija', 'PagesController@getRezervacija');
 Route::get('/jezero', 'PagesController@getJezero');
 Route::get('/cenovnik', 'PagesController@getCenovnik');
-Route::get('/galerija', 'PagesController@getFoto');
 Route::get('/istorija/{godina}', 'PagesController@getIstorija'); 
 Route::get('/ekologija', 'PagesController@getEkologija'); 
 Route::get('/objava/{id}', 'PagesController@getObjava'); 
 
+//Galerry routes
+Route::get('/galerija', 'GalleryController@getFoto');
+Route::get('/galerija/{id}', 'GalleryController@getPics');
+
 //Administrator routes
-Route::get('/admin/nova-objava', 'ArticleController@getNovaObjava'); 
-Route::post('/admin/nova-objava', 'ArticleController@postNovaObjava'); 
-Route::post('/admin/del-objava', 'ArticleController@postDelObjava'); 
-Route::get('/admin/alt-objava/{id}', 'ArticleController@getAltObjava'); 
-Route::post('/admin/alt-objava', 'ArticleController@postAltObjava'); 
+Route::middleware('auth')->group(function () {
+	Route::get('/admin/nova-objava', 'ArticleController@getNovaObjava'); 
+	Route::post('/admin/nova-objava', 'ArticleController@postNovaObjava'); 
+	Route::post('/admin/del-objava', 'ArticleController@postDelObjava'); 
+	Route::get('/admin/alt-objava/{id}', 'ArticleController@getAltObjava'); 
+	Route::post('/admin/alt-objava', 'ArticleController@postAltObjava'); 
+	Route::post('/admin/nov-album', 'GalleryController@postNovAlbum'); 
+	Route::post('/galerija/add_pic', 'GalleryController@postNovPic'); 
+	Route::post('/admin/del-pic', 'GalleryController@postDelPic'); 
+	Route::post('/admin/edit-album', 'GalleryController@postEditAlbum'); 
+	Route::post('/admin/del-album', 'GalleryController@postDelAlbum'); 
+});
