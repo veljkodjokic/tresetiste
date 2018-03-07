@@ -44,7 +44,7 @@ class GalleryController extends Controller
         $slika->img=$name;
         $slika->album_id=$request->album;
 
-        $destinationPath = public_path('/mnt/galerija/'); //pics\galerija\pics ;
+        $destinationPath ='/mnt/galerija/'; //pics\galerija\pics ;
         
         $cover->move($destinationPath, $name);
         
@@ -56,7 +56,7 @@ class GalleryController extends Controller
     {
         $slika= Image::find($request->id);
 
-        $file_path=public_path('/mnt/galerija/'.$slika->img);
+        $file_path='/mnt/galerija/'.$slika->img;
 
         \File::delete($file_path);
         $slika->delete();
@@ -79,7 +79,7 @@ class GalleryController extends Controller
         $images=$album->Images()->get();
 
         foreach($images as $image){
-            $file_path=public_path('/mnt/galerija/'.$image->img);
+            $file_path='/mnt/galerija/'.$image->img;
             @unlink($file_path);
             $image->delete();
         }
