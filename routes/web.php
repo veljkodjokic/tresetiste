@@ -40,3 +40,17 @@ Route::middleware('auth')->group(function () {
 	Route::post('/admin/edit-album', 'GalleryController@postEditAlbum'); 
 	Route::post('/admin/del-album', 'GalleryController@postDelAlbum'); 
 });
+
+//Image
+Route::get('/mnt/galerija/{filename}', function ($filename)
+{
+    $path = '/mnt/galerija' . '/' . $filename;
+
+    $file = File::get($path);
+    $type = File::mimeType($path);
+
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+
+    return $response;
+});
