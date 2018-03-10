@@ -231,9 +231,6 @@
     }
 
     @media only screen and (max-width: 1200px){
-        #fbpage{
-            width: 275px;
-        }
         #sponsor{
             width: 275px;
         }
@@ -244,14 +241,16 @@
 
     @media only screen and (max-width: 1000px){
         
-        #fbpage{
-            display: none;
-        }
         #sponsor{
-            display: none;
+            width: 90%;
         }
+
+        #sticky{
+            width: 40%;
+        }
+
         #content-container{
-            width: 100%;
+            width: 60%;
         }
     }
 
