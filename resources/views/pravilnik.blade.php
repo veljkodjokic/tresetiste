@@ -6,6 +6,7 @@
         color: black
     }
 </style>
+<div id="article-title"><b>Pravilnik jezera</b></div>
                     <p>Jezero poseduje kapitalne primerke &scaron;arana koje smo sa velikom pažnjom pu&scaron;tali u jezero i samim tim potezom omogućili svim posetiocima ulov možda i najvećeg &scaron;arana tkz &ldquo;RIBE ŽIVOTA&rdquo;.<br />
 Iz tog razloga su proistekle:</p>
 

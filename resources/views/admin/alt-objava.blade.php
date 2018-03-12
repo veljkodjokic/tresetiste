@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div id="article-title"><b>Izmeni objavu</b></div>
     <script src="//cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
     <div id="new-article">
          {!! Form::open(['url'=>'/admin/alt-objava', 'method'=>'POST']) !!}

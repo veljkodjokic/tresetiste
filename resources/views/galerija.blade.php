@@ -5,8 +5,15 @@
 	td{
 		padding:5px;
 	}
-</style>
 
+	@media only screen and (max-width: 450px){
+        
+        #sticky{
+        	display:none;
+        }
+    }
+</style>
+<div id="article-title"><b>Galerija</b></div>
 @if(\Auth::User())
     <a href="#" class="bad-link" onclick="album();return false;">
     <div id="album-plus">

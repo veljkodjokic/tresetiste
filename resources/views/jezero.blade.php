@@ -6,6 +6,7 @@
         color: black
     }
 </style>
+<div id="article-title"><b>Jezero Tresetište</b></div>
 <h3>GDE SE NALAZI TRESETI&Scaron;TE?</h3>
 
 <p>Jezero Treseti&scaron;te se nalazi u Evropi, regionu Balkana, Srbiji, Vojvodini. Geografski položaj i &scaron;truktura putne mreže omogućava brzi dolazak do jezera! U tipičnom geografskom području Subotičko - Horgo&scaron;ke pesčare, na samom severu regiona vojvodine, nedaleko od mesta Palić, nalazi se jezero Treseti&scaron;te. Ne vidja se tako često, perfektan sklop prirodnih fenomena, 100 godi&scaron;nja borova suma sa jedne strane i druge pe&scaron;čano stepski krajolik ižmedju kojeg je sme&scaron;ten, pravi biser</p>

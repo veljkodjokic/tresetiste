@@ -6,6 +6,7 @@
         color: black;
     }
 </style>
+<div id="article-title"><b>Ekologija</b></div>
 <p>Kada se počelo sa sanacijom samog jezera sa upravom kluba se usaglasio stav da se jezero MORA pridržavati ekolo&scaron;kih normi pona&scaron;anja i ako je moguće iz na&scaron;eg ugla gledanja i usavr&scaron;avati.<br />
 Nakon izvučene velike količine mulja na obalu jezera koji je u velikoj meri ugrožavao opstanak svih stanovnika jezera,zbog svog raspadanja I stvaranja &scaron;tetnih gasova, počelo je sa &scaron;irenjem ostataka oko priobalja I odmah nakon toga se pristupilo sa ozelenjavanjem I sadnjom ISKLJUČIVO onim vrstama drveća koji su prepoznatljivi za ovo podnevlje nikako nije dolazilo u obzir da se posadi bilo kakva biljka koja nije tipična za ovaj Vojvođanski krajolik.Od drveća je zastupljena u90% vrba koja je naj autentičnija kao drvo koje raste uz jezera ,bare i močvare.</p>
 

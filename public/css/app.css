@@ -17,6 +17,11 @@
 
     }
 
+    .center-img{
+    	display:block;
+    	margin:auto;
+    }
+
     body { 
         background: url('/pics/bg5.jpg') no-repeat center center fixed;
         -moz-background-size: cover;

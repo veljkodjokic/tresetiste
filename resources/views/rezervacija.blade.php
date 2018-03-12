@@ -2,6 +2,6 @@
 
 @section('content')
 
-REZERVACIJA       
+<div id="article-title"><b>Rezervacija mesta</b></div>      
 
 @endsection

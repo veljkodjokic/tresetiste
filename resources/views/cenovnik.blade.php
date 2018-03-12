@@ -9,6 +9,7 @@
         padding: 5px;
     }
 </style>
+<div id="article-title"><b>Cenovnik</b></div>
 <p>Zvanično saop&scaron;tenje Udruženja sportskih ribolovaca &quot;&Scaron;aran&quot; Treseti&scaron;te o cenama dnevnih dozvola za 2017. godinu.</p>
 
 <p>&nbsp;</p>
