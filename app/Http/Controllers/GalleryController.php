@@ -33,7 +33,7 @@ class GalleryController extends Controller
     public function postNovPic(Request $request)
     {
         $this->validate($request, [
-        'slika' => 'required|image|mimes:jpeg,png,jpg,gif|max:6000',
+        'slika' => 'required|image|mimes:jpeg,png,jpg,gif|max:50000',
         ]);
 
         $cover = $request->file('slika');

@@ -5,10 +5,13 @@
 	td{
 		padding:5px;
 	}
+
+	
 	
 	@media only screen and (max-width: 1000px){
 		#content-container{
 			text-align: center;
+			overflow: hidden;
 		}	
 	}	
 </style>

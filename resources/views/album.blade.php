@@ -38,7 +38,7 @@
 
 @foreach($pics as $pic)
 
-    <div id="album-pic">
+    <div id="album-pic" class="tooBig">
         <img src="/mnt/galerija/{{ $pic->img }}" class="fancybox" data-big="/mnt/galerija/{{ $pic->img }}" style="width: 100%">
         @if(\Auth::User()) 
 

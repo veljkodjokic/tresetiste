@@ -5,6 +5,7 @@
 	img{
 		position: relative;
 		max-width: 90%;
+		height: auto;
 	}
 </style>
 
