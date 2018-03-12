@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+	img{
+		position: relative;
+		max-width: 90%;
+	}
+</style>
+
 <div id="article-title"><b>Istorija jezera 2002.</b></div>
 
 <p>Počeli smo sa &scaron;estim poribljavanjem i tako već 22.01.2002 godine pu&scaron;teno je 1888 kg biranih primeraka &scaron;arana. Prosek je bio 6,5kg.</p>

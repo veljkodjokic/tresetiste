@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+	img{
+		position: relative;
+		max-width: 90%;
+	}
+</style>
+
 <div id="article-title"><b>Istorija jezera 2003.</b></div>
 
 	<p>Zvnično otvaranje sezone 2003 godine, bilo je sa PALIĆ CARP CUP-om od 03-05 Aprila, kada smo kao domaćini jezera u organizaciji YU- CARP-a, ugostili takmičare iz vi&scaron;e zemalja. Takmičenje je trajalo 65h, uz velike napore svih učesnika, da izdrže po niskoj temperaturi i jakom vetru koji je dostizao i 70 km/h.<br />

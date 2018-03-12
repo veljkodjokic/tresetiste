@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+	img{
+		position: relative;
+		max-width: 90%;
+	}
+</style>
+
 <div id="article-title"><b>Istorija jezera 2001.</b></div>
 <p>Prvo poribljavanje, tako reći novog jezera, se desilo 14.01.2001 godine, kada je mali kombi sa ekipom u sastavu Robert Karan, Mile Tau&scaron;an(TV NS) sa ostalim članovima donela &scaron;aransku ribu u buradima iz ribnjaka EČKA i poklonila tek osnovanom udruženju &Scaron;ARAN sa Palića. Tu je bilo blizu 600kg sitnijih primeraka između 0,7-2,5kg i ne&scaron;to malo mlađi (godi&scaron;njaka)</p>
 
