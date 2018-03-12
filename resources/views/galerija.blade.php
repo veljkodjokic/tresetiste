@@ -5,18 +5,17 @@
 	td{
 		padding:5px;
 	}
-
-	@media only screen and (max-width: 450px){
-        
-        #sticky{
-        	display:none;
-        }
-    }
+	
+	@media only screen and (max-width: 1000px){
+		#content-container{
+			text-align: center;
+		}	
+	}	
 </style>
 <div id="article-title"><b>Galerija</b></div>
 @if(\Auth::User())
     <a href="#" class="bad-link" onclick="album();return false;">
-    <div id="album-plus">
+    <div id="album-plus" class="tooBig">
 		<table id="album-table">
         	<tr>
 				<td>&nbsp;</td>
@@ -40,7 +39,7 @@
 	$images=$album->images()->orderBy('created_at', 'desc')->get();
 @endphp
 <a href="/galerija/{{ $album->id }}" class="bad-link">
-	<div id="album">
+	<div id="album" class="tooBig">
         <table id="album-table">
         	<tr>
 				<td colspan="2"> @if($count >= 1) <img src="/mnt/galerija/{{ $images[0]->img }}" width="100%" height="100%" id="preview-pic"> @else &nbsp; @endif</td>

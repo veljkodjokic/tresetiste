@@ -257,6 +257,16 @@
         #content-container{
             width: 60%;
         }
+
+        #album{
+        	display: inline-block;
+        	margin: auto;
+        }
+
+        .tooBig{
+    		position: relative;
+    		max-width: 90%;
+    	}
     }
 
     @media only screen and (max-width: 750px){
