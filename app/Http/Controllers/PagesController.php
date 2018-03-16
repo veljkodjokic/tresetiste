@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Article;
+use App\Pass;
 
 class PagesController extends Controller
 {
@@ -21,7 +22,11 @@ class PagesController extends Controller
 
     public function getRezervacija()
     {
-    	return view('rezervacija');
+        $passes=Pass::all();
+        $passes_array = array();
+        foreach($passes as $pass)
+            $passes_array[$pass->length] = $pass->pass;
+    	return view('rezervacija')->with('passes',$passes_array);
     }
 
     public function getJezero()

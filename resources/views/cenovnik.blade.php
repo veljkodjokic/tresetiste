@@ -25,7 +25,7 @@
             <td>3000.00 dinara</td>
         </tr>
         <tr style="background-color:#d1e2ff;">
-            <td>- Dva dana i dve noći / set</td>
+            <td>- Dva dana i dve noći</td>
             <td>4200.00 dinara</td>
         </tr>
         <tr>
@@ -33,7 +33,7 @@
             <td>5400.00 dinara</td>
         </tr>
         <tr style="background-color:#d1e2ff;">
-            <td>- Set dozvola od četri dana (4 dana i 3 noći))</td>
+            <td>- Set dozvola od četri dana (4 dana i 3 noći)</td>
             <td>7200.00 dinara</td>
         </tr>
         <tr>

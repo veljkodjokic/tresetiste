@@ -17,16 +17,19 @@ class CreateReservationsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('contact');
-            $table->integer('box');
+            $table->integer('box_id')->references('id')->on('boxes')->onDelete('cascade');
+            $table->integer('pass_id')->references('id')->on('passes')->onDelete('cascade');
             $table->string('email');
             $table->string('country');
             $table->string('city');
+            $table->string('address');
             $table->string('postalcode');
             $table->text('comment')->nullable();
             $table->dateTime('reserved');
             $table->dateTime('start');
             $table->dateTime('end');
             $table->boolean('paid')->default(0);
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

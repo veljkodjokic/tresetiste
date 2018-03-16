@@ -30,6 +30,12 @@
         background-size: cover;
     }
 
+    #mapa{
+    	position: relative;
+    	width: 110%;
+    	height: auto;
+    }
+
     #album-name{
 		max-width: 200px;
 		white-space: nowrap;
@@ -207,6 +213,18 @@
         min-height: 800px;
     }
 
+    .box{
+    	position: absolute;
+    	height: 17%;
+    	width: 8%;
+    	font-size: 17px;
+    	font-size: 2.2vw;
+    	color: white;
+    	text-align: center;
+    	background-color: #53C4FD;
+    	border-radius: 10%;
+    }
+
     .sponsor{
         position: relative;
         float: top;
@@ -214,12 +232,24 @@
         margin-bottom: 10px;
     }
 
+    #map-container{
+    	position: absolute;
+    	top:10%;
+    	left: 7.5%;
+    	width: 85%;
+    	height: 80%;
+    }
+
+    #zed{
+    	font-size: 25px;
+    }
+
     hr{
     	border-color: darkgrey;
     }
 
     #sponsor{
-        margin-top: 30px;
+        margin-top: 10px;
         float: top;
         float: right;
         width: 240px;
@@ -235,12 +265,20 @@
     	top: 0;
     }
 
+    .btmrg{
+    	margin-top: 120px;
+    }
+
+    #tekst-mesta{
+    	font-size: 16pt;
+    }
+
     @media only screen and (max-width: 1200px){
         #sponsor{
-            width: 275px;
+            width: 200px;
         }
         #sticky{
-            width: 275px;
+            width: 200px;
         }
     }
 
@@ -251,7 +289,7 @@
         }
 
         #sticky{
-            width: 40%;
+            width: 30%;
         }
 
         #content-container{
@@ -280,3 +318,131 @@
         }
     }
 
+    @media only screen and (max-width: 440px){
+        
+        #zed{
+        	font-size: 15px;
+        }
+
+        #mapa{
+        	width: 170%;
+        }
+    }
+
+    @media only screen and (max-width: 310px){
+        #tekst-mesta{
+        	font-size: 10pt;
+        }
+
+        .btmrg{
+        	margin-top: 0px;
+        }
+    }
+
+    #box-1{
+    	border:2px solid #B87333;
+    	bottom:20%;
+    	left: 2%;
+    }
+
+    #box-2{
+    	border:2px solid #B87333;
+    	bottom:19%;
+    	left: 14%;
+    }
+
+    #box-3{
+    	border:2px solid #B87333;
+    	bottom:18%;
+    	left: 25%;
+    }
+
+    #box-4{
+    	border:2px solid #C0C0C0;
+    	bottom:17%;
+    	left: 34%;
+    }
+
+    #box-5{
+    	border:2px solid #D9D919;
+    	bottom:16.5%;
+    	left: 44%;
+    }
+
+    #box-6{
+    	border:2px solid #D9D919;
+    	bottom:16%;
+    	left: 56%;
+    }
+
+    #box-7{
+    	border:2px solid #D9D919;
+    	bottom:16%;
+    	left: 66%;
+    }
+
+    #box-8{
+    	border:2px solid #C0C0C0;
+    	bottom:14%;
+    	left: 77%;
+    }
+
+    #box-9{
+    	border:2px solid #C0C0C0;
+    	bottom:12.5%;
+    	left: 87%;
+    }
+
+    #box-10{
+    	border:2px solid #C0C0C0;
+    	top:14%;
+    	left: 88%;
+    }
+
+    #box-11{
+    	border:2px solid #C0C0C0;
+    	top:12%;
+    	left: 77%;
+    }
+
+    #box-12{
+    	border:2px solid #D9D919;
+    	top:11%;
+    	left: 68%;
+    }
+
+    #box-13{
+    	border:2px solid #D9D919;
+    	top:10%;
+    	left: 59%;
+    }
+
+    #box-14{
+    	border:2px solid #D9D919;
+    	top:11%;
+    	left: 48%;
+    }
+
+    #box-15{
+    	border:2px solid #C0C0C0;
+    	top:13%;
+    	left: 37%;
+    }
+
+    #box-16{
+    	border:2px solid #B87333;
+    	top:15%;
+    	left: 26%;
+    }
+
+    #box-17{
+    	border:2px solid #B87333;
+    	top:18%;
+    	left: 14%;
+    }
+
+    #box-18{
+    	border:2px solid #B87333;
+    	top:20%;
+    	left: 2%;
+    }

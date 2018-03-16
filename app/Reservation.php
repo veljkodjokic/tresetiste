@@ -3,11 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Reservation extends Model
 {
     protected $fillable = [
-        'name', 'email', 'country', 'city', 'postalcode', 'reserved', 'start', 'end', 'paid'
+        'name', 'email', 'country', 'address', 'city', 'postalcode', 'comment', 'reserved', 'start', 'end', 'paid', 'status'
     ];
 
     protected $table = 'reservations';
@@ -15,5 +16,16 @@ class Reservation extends Model
     public function box()
 	{
 		return $this->belongsTo('\App\Box');
+	}
+
+	public function Relevant()
+	{
+		$start=$this->start;
+		$end=$this->end;
+		if(Carbon::now()<$start)
+			return true;
+		if($start<Carbon::now() && Carbon::now()<$end)
+			return true;
+		return false;
 	}
 }

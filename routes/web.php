@@ -23,6 +23,10 @@ Route::get('/istorija/{godina}', 'PagesController@getIstorija');
 Route::get('/ekologija', 'PagesController@getEkologija'); 
 Route::get('/objava/{id}', 'PagesController@getObjava'); 
 
+//Reservation routes
+Route::post('/rezervacija_mesta', 'ReservationController@postMesta'); 
+Route::post('/rezervacija', 'ReservationController@postRezervacija'); 
+
 //Galerry routes
 Route::get('/galerija', 'GalleryController@getFoto');
 Route::get('/galerija/{id}', 'GalleryController@getPics');
