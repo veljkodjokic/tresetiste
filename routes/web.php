@@ -58,3 +58,12 @@ Route::get('/mnt/galerija/{filename}', function ($filename)
 
     return $response;
 });
+
+Route::get('/send_test_email', function(){
+	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
+	{
+		$message->subject('Mailgun and Laravel are awesome!');
+		$message->from('no-reply@tresetiste.com', 'Tresetiste');
+		$message->to('veledjokic@gmail.com');
+	});
+});
