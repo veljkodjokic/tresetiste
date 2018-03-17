@@ -15,6 +15,7 @@
 
 <div id="article-title"><b>Rezervacija mesta</b></div> <br>  
 <div id="zed"><b>1. Odaberite datum</b></div>
+<div id="zed" style="padding-left: 30px;"><b>   Válassza ki a dátumot</b></div>
 
 	{!! Form::open(['url'=>'/rezervacija', 'method'=>'POST']) !!}
 	<h4>Dolazak</h4>
@@ -49,7 +50,8 @@
 			<div id="box-17" class="box"><b>17</b></div>
 			<div id="box-18" class="box"><b>18</b></div>
 		</div>
-	</div><br>
+	</div>
+	<br>
 	<table>
 		<tr>
 			<th colspan="2">Sektori</th>
@@ -73,9 +75,29 @@
 			<td><div style="width: 10px; height: 10px; background-color: #FFA500"></td>
 			<td nowrap style="padding-left: 5px">Čeka se uplata (48h)</td>
 		</tr>
-	</table>
-	{!! Form::close() !!}
-</div>
+	</table></div>
+	<br>
+<div id="zed" style="margin-top: 50px;"><b>3. Unesite podatke</b></div>
+<h4>Ime*</h4>
+{!! Form::text('name','',['id'=>'name', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+<h4>Email*</h4>
+{!! Form::text('email','',['id'=>'email', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
+<h4>Kontakt telefon*</h4>
+{!! Form::text('contact','',['id'=>'contact', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
+<h4>Država*</h4>
+{!! Form::text('country','',['id'=>'country', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+<h4>Grad*</h4>
+{!! Form::text('city','',['id'=>'city', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+<h4>Poštanski broj*</h4>
+{!! Form::text('postalcode','',['id'=>'postalcode', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+<h4>Adresa*</h4>
+{!! Form::text('address','',['id'=>'address', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+<h4>Komentar</h4>
+{!! Form::textarea('comment',' ',['id'=>'comment','style'=>'min-height: 200px; width: 90%; resize: none;', 'class'=>'form-control']) !!}<br>
+
+{!! Form::submit('Rezerviši',['class'=>'btn btn-primary', 'id'=>'reserve']) !!}
+{!! Form::close() !!}
+
 <script type="text/javascript">
 $("#dozvola").prop("selectedIndex", -1);
 

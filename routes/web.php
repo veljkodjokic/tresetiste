@@ -26,6 +26,7 @@ Route::get('/objava/{id}', 'PagesController@getObjava');
 //Reservation routes
 Route::post('/rezervacija_mesta', 'ReservationController@postMesta'); 
 Route::post('/rezervacija', 'ReservationController@postRezervacija'); 
+Route::get('/rezervacija/statur/{id}', 'ReservationController@postStatus'); 
 
 //Galerry routes
 Route::get('/galerija', 'GalleryController@getFoto');
@@ -57,13 +58,4 @@ Route::get('/mnt/galerija/{filename}', function ($filename)
     $response->header("Content-Type", $type);
 
     return $response;
-});
-
-Route::get('/send_test_email', function(){
-	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
-	{
-		$message->subject('Mailgun and Laravel are awesome!');
-		$message->from('no-reply@tresetiste.com', 'Tresetiste');
-		$message->to('veledjokic@gmail.com');
-	});
 });

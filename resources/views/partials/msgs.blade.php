@@ -15,3 +15,9 @@
 	swal('Ažurirano!','Objava je uspešno ažurirana!','success')
 </script>
 @endif
+
+@if(\Session::has('status'))
+<script type="text/javascript">
+	swal('Rezervacija uspešno potvrđena!','Uplata se očekuje najkasnije 48 časova od momenta rezervisanja','success')
+</script>
+@endif

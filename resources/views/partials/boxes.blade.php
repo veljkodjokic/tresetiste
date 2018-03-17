@@ -53,26 +53,5 @@
   		@endif
   	@endfor
 </select>
-
-<div id="zed" style="margin-top: 50px;"><b>3. Unesite podatke</b></div>
 {!! Form::hidden('start', $start ) !!}
 {!! Form::hidden('end', $end ) !!}
-<h4>Ime*</h4>
-{!! Form::text('name','',['id'=>'name', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
-<h4>Email*</h4>
-{!! Form::text('email','',['id'=>'email', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
-<h4>Kontakt telefon*</h4>
-{!! Form::text('contact','',['id'=>'contact', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
-<h4>Država*</h4>
-{!! Form::text('county','',['id'=>'county', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
-<h4>Grad*</h4>
-{!! Form::text('city','',['id'=>'city', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
-<h4>Poštanski broj*</h4>
-{!! Form::text('postalcode','',['id'=>'postalcode', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
-<h4>Adresa*</h4>
-{!! Form::text('address','',['id'=>'address', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
-<h4>Komentar</h4>
-{!! Form::textarea('comment',' ',['id'=>'comment','style'=>'min-height: 200px; width: 90%; resize: none;', 'class'=>'form-control']) !!}<br>
-
-{!! Form::submit('Rezerviši',['class'=>'btn btn-primary', 'id'=>'reserve']) !!}
-{!! Form::close() !!}
