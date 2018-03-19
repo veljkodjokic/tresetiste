@@ -24,7 +24,7 @@
 
 @if(\Session::has('confirm-res'))
 <script type="text/javascript">
-	swal('Potvrdite rezervaciju','Molimo vas da potvrdite vašu rezervaciju u naredna 24h putem emaila koji smo poslali na vašu email adresu','warning')
+	swal('Potvrdite rezervaciju','Molimo vas da potvrdite vašu rezervaciju u naredna 2h putem emaila koji smo poslali na vašu email adresu','warning')
 </script>
 @endif
 

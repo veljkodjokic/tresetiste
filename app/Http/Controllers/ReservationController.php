@@ -128,6 +128,13 @@ class ReservationController extends Controller
         return view('uplatnica')->with(['reservation'=>$reservation,'box'=>$box,'pass'=>$pass,'price'=>$price]);
     }
 
+    public function getRezervacije()
+    {
+        $reservations=Reservation::all();
+
+        return view('admin.rezervacije')->with('reservations',$reservations);
+    }
+
     public function Price($reservation)
     {
         $box=$reservation->Box()->first();
