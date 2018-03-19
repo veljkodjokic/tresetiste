@@ -81,7 +81,7 @@ class ReservationController extends Controller
 
         if ($validator->fails()) {
             return \Redirect::back()
-                        ->withErrors($validator)->withInput($request->all());;
+                        ->withErrors($validator)->withInput($request->all());
         }
 
     	$reservation = new Reservation;

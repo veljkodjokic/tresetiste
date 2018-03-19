@@ -143,7 +143,7 @@ $.ajaxSetup({
 $( "#dozvola" ).change(function() {
   var pass = $("#dozvola option:selected").val();
   var start = document.getElementById("day").value;
-  
+
 	$.post('{{ url('/rezervacija_mesta') }}', {pass: pass, start: start}, function(markup)
    {
        $('#markup').html(markup);
