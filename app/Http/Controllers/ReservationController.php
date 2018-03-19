@@ -67,7 +67,7 @@ class ReservationController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|min:2|max:100',
             'email' => 'required|email|min:6|max:50',
-            'contact' => 'required|min:6|max:13',
+            'contact' => 'required|min:6|max:20',
             'mesto' => 'required',
             'dozvola' => 'required',
             'start' => 'required',

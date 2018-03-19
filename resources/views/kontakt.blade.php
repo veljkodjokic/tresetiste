@@ -45,7 +45,8 @@
     {!! Form::close() !!}  
     <br>
     <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-    Kontakt:
-    <b>Broj</b>              
+    Kontakt broj:
+    <b>+381 0658345125</b> <br><br>
+    kontakt@tresetiste.com             
 
 @endsection    
