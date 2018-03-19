@@ -16,8 +16,14 @@
 </script>
 @endif
 
-@if(\Session::has('status'))
+@if(\Session::has('status_wtf'))
 <script type="text/javascript">
 	swal('Rezervacija uspešno potvrđena!','Uplata se očekuje najkasnije 48 časova od momenta rezervisanja','success')
+</script>
+@endif
+
+@if(\Session::has('confirm-res'))
+<script type="text/javascript">
+	swal('Potvrdite rezervaciju','Molimo vas da potvrdite vašu rezervaciju u naredna 24h putem emaila koji smo poslali na vašu email adresu','warning')
 </script>
 @endif

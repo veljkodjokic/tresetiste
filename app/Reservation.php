@@ -18,6 +18,11 @@ class Reservation extends Model
 		return $this->belongsTo('\App\Box');
 	}
 
+	public function pass()
+	{
+		return $this->belongsTo('\App\Pass');
+	}
+
 	public function Relevant()
 	{
 		$start=$this->start;

@@ -10,10 +10,11 @@
     }
 </style>
 <div id="article-title"><b>Cenovnik</b></div>
-<p>Zvanično saop&scaron;tenje Udruženja sportskih ribolovaca &quot;&Scaron;aran&quot; Treseti&scaron;te o cenama dnevnih dozvola za 2017. godinu.</p>
+<p>Zvanično saop&scaron;tenje Udruženja sportskih ribolovaca &quot;&Scaron;aran&quot; Treseti&scaron;te o cenama dnevnih dozvola za 2018. godinu.</p>
 
-<p>&nbsp;</p>
-
+<br>
+<h3 style="color: green">Ostvarite 20% popusta rezervacijom mesta u 1. sektoru!</h3>
+<br>
 <table style="width: 80%;">
     <tbody>
         <tr style="background-color:#d1e2ff;">

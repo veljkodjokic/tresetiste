@@ -26,7 +26,8 @@ Route::get('/objava/{id}', 'PagesController@getObjava');
 //Reservation routes
 Route::post('/rezervacija_mesta', 'ReservationController@postMesta'); 
 Route::post('/rezervacija', 'ReservationController@postRezervacija'); 
-Route::get('/rezervacija/statur/{id}', 'ReservationController@postStatus'); 
+Route::get('/rezervacija/status/{id}', 'ReservationController@postStatus'); 
+Route::get('/rezervacija/potvrda/{id}', 'ReservationController@getPotvrda'); 
 
 //Galerry routes
 Route::get('/galerija', 'GalleryController@getFoto');

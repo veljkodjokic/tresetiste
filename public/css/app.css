@@ -225,6 +225,63 @@
     	border-radius: 10%;
     }
 
+    .box1{
+        position: absolute;
+        font-size: 8px;
+        font-size: 1.2vw;
+        color: black;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    #uplatilac{
+    	padding:0.5%;
+        top:16%;
+        left: 3%;
+        width: 40%;
+        height: 15%;
+    }
+
+    #svrha{
+    	padding:0.5%;
+        top:38%;
+        left: 3%;
+        width: 40%;
+        height: 15%;
+    }
+
+    #primalac{
+    	padding:0.5%;
+        top:61%;
+        left: 3%;
+        width: 40%;
+        height: 15%;
+    }
+
+    #valuta{
+    	padding:0.5%;
+        top:20%;
+        left: 57%;
+        width: 7%;
+        height: 8%;
+    }
+
+    #iznos{
+    	padding:0.2%;
+        top:20%;
+        left: 70%;
+        width: 15%;
+        height: 8%;
+    }
+
+    #primaoc{
+    	padding:0.2%;
+        top:35%;
+        left: 50%;
+        width: 30%;
+        height: 8%;
+    }
+
     .sponsor{
         position: relative;
         float: top;
@@ -241,7 +298,7 @@
     }
 
     #zed{
-    	font-size: 25px;
+    	font-size: 1.5vw;
     }
 
     hr{

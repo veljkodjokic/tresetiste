@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use App\Reservation;
 
 class ReservationMail extends Mailable
 {
@@ -17,10 +18,12 @@ class ReservationMail extends Mailable
      * @return void
      */
     public $reservation;
+    public $price;
 
-    public function __construct($reservation)
+    public function __construct(Reservation $reservation, $price)
     {
         $this->reservation =$reservation;    
+        $this->price =$price;    
     }
 
     /**
@@ -31,6 +34,7 @@ class ReservationMail extends Mailable
     public function build()
     {
         $reservation=$this->reservation;
-        return $this->view('email.confirmReservation')->with($reservation);
+        $price=$this->price;
+        return $this->view('email.confirmReservation')->with(['reservation'=>$reservation, 'price'=>$price])->subject('Potvrda rezervacije');
     }
 }

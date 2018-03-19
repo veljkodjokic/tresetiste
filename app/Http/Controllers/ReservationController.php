@@ -65,15 +65,16 @@ class ReservationController extends Controller
     public function postRezervacija(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|min:6|max:50',
+            'name' => 'required|min:2|max:100',
             'email' => 'required|email|min:6|max:50',
             'contact' => 'required|min:6|max:13',
             'mesto' => 'required',
             'dozvola' => 'required',
             'start' => 'required',
             'end' => 'required',
-            'country' => 'required|min:5|max:20',
-            'city' => 'required|max:40',
+            'address' => 'required|min:5|max:100',
+            'country' => 'required|min:5|max:50',
+            'city' => 'required|max:50',
             'postalcode' => 'required|max:10',
             'comment' => 'max:250',
         ]);
@@ -90,6 +91,7 @@ class ReservationController extends Controller
         $reservation->box_id=$request->mesto;
         $reservation->pass_id=$request->dozvola;
         $reservation->country=$request->country;
+        $reservation->address=$request->address;
         $reservation->city=$request->city;
         $reservation->postalcode=$request->postalcode;
         $reservation->comment=$request->comment;
@@ -98,9 +100,12 @@ class ReservationController extends Controller
         $reservation->end=$request->end;
         $reservation->save();
 
-        \Mail::to($request->email)->send(new ReservationMail($request));
+        $price=$this->Price($reservation);
 
-        return back();
+        \Mail::to($request->email)->send(new ReservationMail($reservation, $price));
+
+        \Session::flash('confirm-res');
+        return redirect('/');
     }
 
     public function postStatus($id)
@@ -109,7 +114,29 @@ class ReservationController extends Controller
         $reservation->status=1;
         $reservation->save();
 
-        \Session::flash('status');
-        return redirect('/');
+        \Session::flash('status_wtf');
+        return redirect('/rezervacija/potvrda/'.$reservation->id);
+    }
+
+    public function getPotvrda($id)
+    {
+        $reservation=Reservation::find($id);
+        $box=$reservation->Box()->first();
+        $pass=$reservation->Pass()->first();
+        $price=$this->Price($reservation);
+
+        return view('uplatnica')->with(['reservation'=>$reservation,'box'=>$box,'pass'=>$pass,'price'=>$price]);
+    }
+
+    public function Price($reservation)
+    {
+        $box=$reservation->Box()->first();
+        $pass=$reservation->Pass()->first();
+        if($box->sector == 1)
+            $price=$pass->price*0.8;
+        else
+            $price=$pass->price;
+
+        return $price;
     }
 }

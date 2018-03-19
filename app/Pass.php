@@ -10,5 +10,10 @@ class Pass extends Model
         'pass', 'length', 'price'
     ];
 
+    public function reservations()
+	{
+		return $this->hasMany('\App\Reservation');
+	}
+
     protected $table = 'passes';
 }

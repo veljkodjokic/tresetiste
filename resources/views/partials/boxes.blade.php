@@ -28,7 +28,7 @@
 	</tr>
 	<tr>
 		<td><div style="width: 10px; height: 10px; border:2px solid #B87333"></div></td>
-		<td nowrap style="padding:0 15px 0 5px;">Sektor 1</td>
+		<td nowrap style="padding:0 15px 0 5px;">Sektor 1 (-20%)</td>
 		<td><div style="width: 10px; height: 10px; background-color: #B2F147"></td>
 		<td nowrap style="padding-left: 5px">Slobodno mesto</td>
 	</tr>
