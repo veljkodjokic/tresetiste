@@ -12,6 +12,7 @@ use App\Box;
 use App\Pass;
 use App\Mail\ReservationMail;
 use App\Mail\CanceledReservation;
+use App\Mail\ConfirmPayment;
 
 class ReservationController extends Controller
 {
@@ -139,6 +140,8 @@ class ReservationController extends Controller
         $reservation->paid=1;
         $reservation->save();
 
+        \Mail::to($reservation->email)->send(new ConfirmPayment());
+
         return \Redirect::back();
     }
 
@@ -155,7 +158,7 @@ class ReservationController extends Controller
     {
         $reservation=Reservation::find($id);
         $box=$reservation->Box()->first();
-        $pass=$reservation->Pass()->first();
+        $pass=Pass::where('length',$reservation->pass_id)->first();
         $price=$this->Price($reservation);
 
         return view('uplatnica')->with(['reservation'=>$reservation,'box'=>$box,'pass'=>$pass,'price'=>$price]);
@@ -171,7 +174,8 @@ class ReservationController extends Controller
     public function Price($reservation)
     {
         $box=$reservation->Box()->first();
-        $pass=$reservation->Pass()->first();
+        $pass=Pass::where('length', $reservation->pass_id)->first();
+
         if($box->sector == 1)
             $price=$pass->price*0.8;
         else

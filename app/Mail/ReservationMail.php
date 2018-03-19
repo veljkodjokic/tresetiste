@@ -35,6 +35,6 @@ class ReservationMail extends Mailable
     {
         $reservation=$this->reservation;
         $price=$this->price;
-        return $this->view('email.confirmReservation')->with(['reservation'=>$reservation, 'price'=>$price])->subject('Potvrda rezervacije');
+        return $this->view('email.confirmReservation')->with(['reservation'=>$reservation, 'price'=>$price])->subject('Potvrda Rezervacije');
     }
 }

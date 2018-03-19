@@ -48,7 +48,7 @@
 @foreach($reservations as $reservation)
 @php
     $box=$reservation->Box()->first();
-    $pass=$reservation->Pass()->first();
+    $pass=\App\Pass::where('length',$reservation->pass_id)->first();
     if($box->sector == 1)
         $price=$pass->price*0.8;
     else
