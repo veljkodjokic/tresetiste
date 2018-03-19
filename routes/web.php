@@ -22,6 +22,8 @@ Route::get('/cenovnik', 'PagesController@getCenovnik');
 Route::get('/istorija/{godina}', 'PagesController@getIstorija'); 
 Route::get('/ekologija', 'PagesController@getEkologija'); 
 Route::get('/objava/{id}', 'PagesController@getObjava'); 
+Route::get('/kontakt', 'PagesController@getKontakt'); 
+Route::post('/kontakt', 'PagesController@postKontakt'); 
 
 //Reservation routes
 Route::post('/rezervacija_mesta', 'ReservationController@postMesta'); 

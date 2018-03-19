@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Pass;
+use App\Mail\ContactUsMail;
 
 class PagesController extends Controller
 {
@@ -31,7 +32,25 @@ class PagesController extends Controller
 
     public function getJezero()
     {
-    	return view('jezero');
+        return view('jezero');
+    }
+
+    public function getKontakt()
+    {
+        return view('kontakt');
+    }
+
+    public function postKontakt(Request $request)
+    {
+    	$name=$request->ime;
+        $email=$request->email;
+        $content=$request->poruka;
+        $formular=['email'=>$email,'content'=>$content, 'name'=>$name];
+
+        \Mail::to('kontakt@tresetiste.com')->send(new ContactUsMail($formular));
+
+        \Session::flash('kontakt');
+        return \Redirect::back();
     }
 
     public function getCenovnik()

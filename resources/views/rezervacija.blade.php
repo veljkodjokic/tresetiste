@@ -124,7 +124,7 @@
 {!! Form::close() !!}
 
 <script type="text/javascript">
-$("#dozvola").prop("selectedIndex", -1);
+$("#dozvola").prop("selectedIndex", 0);
 
 $.ajaxSetup({
   headers: {
@@ -141,6 +141,16 @@ $.ajaxSetup({
   });
 
 $( "#dozvola" ).change(function() {
+  var pass = $("#dozvola option:selected").val();
+  var start = document.getElementById("day").value;
+  
+	$.post('{{ url('/rezervacija_mesta') }}', {pass: pass, start: start}, function(markup)
+   {
+       $('#markup').html(markup);
+   });
+});
+
+$( "#day" ).change(function() {
   var pass = $("#dozvola option:selected").val();
   var start = document.getElementById("day").value;
   

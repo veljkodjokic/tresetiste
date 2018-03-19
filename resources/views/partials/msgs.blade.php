@@ -27,3 +27,9 @@
 	swal('Potvrdite rezervaciju','Molimo vas da potvrdite vašu rezervaciju u naredna 24h putem emaila koji smo poslali na vašu email adresu','warning')
 </script>
 @endif
+
+@if(\Session::has('kontakt'))
+<script type="text/javascript">
+	swal('Hvala vam što ste nas kontaktirali',' ','success')
+</script>
+@endif
