@@ -57,10 +57,17 @@
     <tr>
       <td>{{ $reservation->name }}<br>
 
+      @if(!$reservation->paid)
       {!! Form::open(['url'=>'/admin/potvrdi', 'method'=>'POST']) !!}
       {!! Form::hidden('id', $reservation->id ) !!}
       {!! Form::submit('Potvrdi uplatu',['class'=>'btn btn-primary']) !!}
       {!! Form::close() !!}</td>
+      @else
+      {!! Form::open(['url'=>'/admin/povrati', 'method'=>'POST']) !!}
+      {!! Form::hidden('id', $reservation->id ) !!}
+      {!! Form::submit('Povrati',['class'=>'btn btn-primary']) !!}
+      {!! Form::close() !!}</td>
+      @endif
 
       <td>{{ $reservation->email }}<br>
       {!! Form::open(['url'=>'/admin/del-res','id'=>'predaj', 'method'=>'POST']) !!}
@@ -72,7 +79,7 @@
       <td>@if($reservation->status) DA @else NE @endif</td>
       <td>{{$box->id}}</td>
       <td>{{ substr($reservation->start, 0,10)}} -<br>{{ substr($reservation->end, 0,10) }}</td>
-      <td>{{ $price }} din</td>
+      <td style="background-color: @if($reservation->paid) #B2F147 @else #FF4E4E @endif">{{ $price }} din</td>
     </tr>
 @endforeach
 </table>

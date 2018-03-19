@@ -133,6 +133,24 @@ class ReservationController extends Controller
         return \Redirect::back();
     }
 
+    public function postPotvrdi(Request $request)
+    {
+        $reservation=Reservation::find($request->id);
+        $reservation->paid=1;
+        $reservation->save();
+
+        return \Redirect::back();
+    }
+
+    public function postPovrati(Request $request)
+    {
+        $reservation=Reservation::find($request->id);
+        $reservation->paid=0;
+        $reservation->save();
+
+        return \Redirect::back();
+    }
+
     public function getPotvrda($id)
     {
         $reservation=Reservation::find($id);
