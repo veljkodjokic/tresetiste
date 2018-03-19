@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div style="width: 110%; position: relative; height: auto;">
+    <div style="width: 110%; position: relative; height: auto; line-height:normal;">
         <img src="/pics/uplatnica.png" width="100%">
         <div id="uplatilac" class="box1"><p>{{ $reservation->name }}<br>{{ $reservation->postalcode }} {{ $reservation->city }}, {{ $reservation->address }}</p></div>
         <div id="svrha" class="box1">Rezervacija mesta</div>
