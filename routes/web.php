@@ -48,6 +48,7 @@ Route::middleware('auth')->group(function () {
 	Route::post('/admin/edit-album', 'GalleryController@postEditAlbum'); 
 	Route::post('/admin/del-album', 'GalleryController@postDelAlbum'); 
 	Route::get('/admin/rezervacije', 'ReservationController@getRezervacije'); 
+	Route::post('/admin/del-res', 'ReservationController@postDelRes'); 
 });
 
 //Image

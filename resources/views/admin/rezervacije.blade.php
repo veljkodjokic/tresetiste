@@ -63,10 +63,10 @@
       {!! Form::close() !!}</td>
 
       <td>{{ $reservation->email }}<br>
-      {!! Form::open(['url'=>'/admin/del_res','id'=>'predaj', 'method'=>'POST']) !!}
+      {!! Form::open(['url'=>'/admin/del-res','id'=>'predaj', 'method'=>'POST']) !!}
       {!! Form::hidden('id', $reservation->id ) !!}
-      <button class="btn btn-primary" onclick="ays()" style="background-color:#FD6770; border-color:#FD6770">Obriši</button>
       {!! Form::close() !!}
+      <button class="btn btn-primary" onclick="ays()" style="background-color:#FD6770; border-color:#FD6770">Obriši</button>
       </td>
       <td>{{ $reservation->contact }}</td>
       <td>@if($reservation->status) DA @else NE @endif</td>
@@ -81,13 +81,13 @@
   function ays(){
     swal({
     title: 'Da li ste sigurni?',
-    text: "Obrisan album je nepovratan!",
+    text: "Obrisana rezervacija je nepovratan!",
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
     cancelButtonText: 'Ne',
-    confirmButtonText: 'Da, obriši album!'
+    confirmButtonText: 'Da, obriši rezervaciju!'
   }).then((result) => {
     if (result.value) {
       document.getElementById('predaj').submit();

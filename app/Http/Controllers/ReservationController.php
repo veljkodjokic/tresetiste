@@ -11,6 +11,7 @@ use App\Reservation;
 use App\Box;
 use App\Pass;
 use App\Mail\ReservationMail;
+use App\Mail\CanceledReservation;
 
 class ReservationController extends Controller
 {
@@ -116,6 +117,20 @@ class ReservationController extends Controller
 
         \Session::flash('status_wtf');
         return redirect('/rezervacija/potvrda/'.$reservation->id);
+    }
+
+    public function postDelRes(Request $request)
+    {
+        $reservation=Reservation::find($request->id);
+
+        $admins=\App\User::all();
+        foreach ($admins as $admin) {
+            \Mail::to($admin->email)->send(new CanceledReservation($reservation, $admin));
+        }
+
+        $reservation->delete();
+
+        return \Redirect::back();
     }
 
     public function getPotvrda($id)
