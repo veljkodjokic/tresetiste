@@ -45,6 +45,12 @@ class ReservationExp extends Command
             $reservation->delete();
         }
 
+        $exp=Carbon::now()->subDays(2);
+        $reservations=Reservation::where('created_at','<',$exp)->where('paid','=',0)->get();
+        foreach ($reservations as $reservation) {
+            $reservation->delete();
+        }
+
         $this->info('Hourly removal of expired reservations due to a failure to confirm them has been successfully completed!');
     }
 }
