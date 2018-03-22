@@ -66,20 +66,26 @@ class ReservationController extends Controller
 
     public function postRezervacija(Request $request)
     {
+        $messages = [
+            'start.after_or_equal' => 'Najraniji datum za rezervaciju je 2 dana od današnjeg.',
+            'start.before_or_equal' => 'Najkasniji datum za rezervaciju je mesec dana od današnjeg.',
+            'start.required' => 'Polje dolazak je obavezno.',
+        ];
+
         $validator = Validator::make($request->all(), [
-            'name' => 'required|min:2|max:100',
+            'ime' => 'required|min:2|max:100',
             'email' => 'required|email|min:6|max:50',
-            'contact' => 'required|min:6|max:20',
+            'kontakt' => 'required|min:6|max:20',
             'mesto' => 'required',
             'dozvola' => 'required',
             'start' => 'required|after_or_equal:'.substr(Carbon::now()->addDays(2), 0,10).'|before_or_equal:'.substr(Carbon::now()->addMonths(1), 0,10),
             'end' => 'required',
-            'address' => 'required|min:5|max:100',
-            'country' => 'required|min:5|max:50',
-            'city' => 'required|max:50',
-            'postalcode' => 'required|max:10',
-            'comment' => 'max:250',
-        ]);
+            'adresa' => 'required|min:5|max:100',
+            'drzava' => 'required|min:5|max:50',
+            'grad' => 'required|max:50',
+            'postanski_broj' => 'required|max:10',
+            'komentar' => 'max:250',
+        ],$messages);
 
         if ($validator->fails()) {
             return \Redirect::back()
@@ -87,16 +93,16 @@ class ReservationController extends Controller
         }
 
     	$reservation = new Reservation;
-        $reservation->name=$request->name;
+        $reservation->name=$request->ime;
         $reservation->email=$request->email;
-        $reservation->contact=$request->contact;
+        $reservation->contact=$request->kontakt;
         $reservation->box_id=$request->mesto;
         $reservation->pass_id=$request->dozvola;
-        $reservation->country=$request->country;
-        $reservation->address=$request->address;
-        $reservation->city=$request->city;
-        $reservation->postalcode=$request->postalcode;
-        $reservation->comment=$request->comment;
+        $reservation->country=$request->drzava;
+        $reservation->address=$request->adresa;
+        $reservation->city=$request->grad;
+        $reservation->postalcode=$request->postanski_broj;
+        $reservation->comment=$request->komentar;
         $reservation->reserved=Carbon::now();
         $reservation->start=Carbon::parse($request->start)->addHours(6);
         $reservation->end=$request->end;

@@ -92,33 +92,33 @@
 <h4>Ime*</h4>
 <h5>Név*</h5>
 <h5>Name*</h5>
-{!! Form::text('name','',['id'=>'name', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('ime','',['id'=>'name', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
 <h4>Email*</h4>
 {!! Form::text('email','',['id'=>'email', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
 <h4>Kontakt telefon*</h4>
 <h5>Telefonszám*</h5>
 <h5>Telephone number*</h5>
-{!! Form::text('contact','',['id'=>'contact', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('kontakt','',['id'=>'contact', 'style'=>'width:200px;', 'class'=>'form-control' ]) !!}
 <h4>Država*</h4>
 <h5>Ország*</h5>
 <h5>Country*</h5>
-{!! Form::text('country','',['id'=>'country', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('drzava','',['id'=>'country', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
 <h4>Grad*</h4>
 <h5>Város*</h5>
 <h5>City*</h5>
-{!! Form::text('city','',['id'=>'city', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('grad','',['id'=>'city', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
 <h4>Poštanski broj*</h4>
 <h5>Irányítószám*</h5>
 <h5>Postal code*</h5>
-{!! Form::text('postalcode','',['id'=>'postalcode', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('postanski_broj','',['id'=>'postalcode', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
 <h4>Adresa*</h4>
 <h5>Cím*</h5>
 <h5>Address*</h5>
-{!! Form::text('address','',['id'=>'address', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
+{!! Form::text('adresa','',['id'=>'address', 'style'=>'width:150px;', 'class'=>'form-control' ]) !!}
 <h4>Komentar</h4>
 <h5>Megjegyzés</h5>
 <h5>Comment</h5>
-{!! Form::textarea('comment',' ',['id'=>'comment','style'=>'min-height: 200px; width: 90%; resize: none;', 'class'=>'form-control']) !!}<br>
+{!! Form::textarea('komentar',' ',['id'=>'comment','style'=>'min-height: 200px; width: 90%; resize: none;', 'class'=>'form-control']) !!}<br>
 
 {!! Form::submit('Rezerviši',['class'=>'btn btn-primary', 'id'=>'reserve']) !!}
 {!! Form::close() !!}

@@ -170,7 +170,7 @@
 <!-- Scripts -->
 @if ($errors->any())
     <script type="text/javascript">
-        swal ( "There seems to be a problem with your input." ," @foreach ($errors->all() as $error) {{ $error }} @endforeach ",  "error");
+        swal ( "Došlo je do greške sa unetim podacima." ," @foreach ($errors->all() as $error) {{ $error }} @endforeach ",  "error");
     </script>
 @endif
 @include('partials/msgs')
