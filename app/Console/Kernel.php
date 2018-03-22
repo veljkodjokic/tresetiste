@@ -26,6 +26,8 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('ReservationExp')
                  ->everyFifteenMinutes();
+        $schedule->command('NotPaid')
+                ->twiceDaily(1, 13);
     }
 
     /**

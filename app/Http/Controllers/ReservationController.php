@@ -72,7 +72,7 @@ class ReservationController extends Controller
             'contact' => 'required|min:6|max:20',
             'mesto' => 'required',
             'dozvola' => 'required',
-            'start' => 'required',
+            'start' => 'required|after_or_equal:'.substr(Carbon::now()->addDays(2), 0,10).'|before_or_equal:'.substr(Carbon::now()->addMonths(1), 0,10),
             'end' => 'required',
             'address' => 'required|min:5|max:100',
             'country' => 'required|min:5|max:50',
