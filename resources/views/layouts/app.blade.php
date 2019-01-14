@@ -11,6 +11,10 @@
     <meta property=og:type content=website>
     <meta property=og:description content='Carp fishing lake'>
     <meta property=og:image content='https://tresetiste.com/pics/jezero-tresetiste.jpg'>
+    
+    <meta name="description" content="Carp fishing lake">
+    <meta name="keywords" content="carp, fishing, lake, tresetiste">
+    <meta name="author" content="Veljko Djokic">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
